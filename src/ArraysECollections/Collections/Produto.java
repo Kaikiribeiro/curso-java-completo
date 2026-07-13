@@ -1,0 +1,25 @@
+package ArraysECollections.Collections;
+
+import java.util.Objects;
+
+public class Produto {
+  String nome;
+  double preco;
+
+  public Produto(String nome, double preco) {
+    this.nome = nome;
+    this.preco = preco;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o == null || getClass() != o.getClass()) return false;
+    Produto produto = (Produto) o;
+    return Double.compare(preco, produto.preco) == 0 && Objects.equals(nome, produto.nome);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(nome, preco);
+  }
+}
