@@ -11,7 +11,7 @@ public class Funcionario {
     this.salarioBase = salarioBase;
   }
 
-  double calcularSalario() {
+  public double calcularSalario() {
     return salarioBase;
   }
 

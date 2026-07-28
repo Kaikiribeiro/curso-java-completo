@@ -9,7 +9,7 @@ public class Desenvolvedor extends Funcionario {
   }
 
   @Override
-  double calcularSalario() {
+  public double calcularSalario() {
     if (nivel.equalsIgnoreCase("SENIOR")) {
       return super.calcularSalario() + (salarioBase * 0.3);
     } else if (nivel.equalsIgnoreCase("PLENO")) {
