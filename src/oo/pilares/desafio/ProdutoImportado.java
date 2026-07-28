@@ -15,6 +15,6 @@ public class ProdutoImportado extends Produto implements Importavel {
 
   @Override
   public String getCodigoRastreio() {
-    return "BR-IMP-" + super.getCodigo();
+    return "BR-" + super.getCodigo();
   }
 }
