@@ -2,11 +2,11 @@ package oo.pilares.heranca.desafio;
 
 public class Jetta extends Carro {
 
-  Jetta() {
+  public Jetta() {
     this(250);
   }
 
-  Jetta(int velociadeMaxima) {
+  public Jetta(int velociadeMaxima) {
     super(velociadeMaxima);
     delta = 225;
   }

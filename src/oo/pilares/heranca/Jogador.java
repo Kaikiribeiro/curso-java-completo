@@ -1,16 +1,16 @@
 package oo.pilares.heranca;
 
 public class Jogador {
-  int x;
-  int y;
-  int vida = 100;
+  public int x;
+  public int y;
+  public int vida = 100;
 
-  Jogador(int x, int y) {
+  protected Jogador(int x, int y) {
     this.x = x;
     this.y = y;
   }
 
-  boolean atacar(Jogador oponete) {
+  public boolean atacar(Jogador oponete) {
 
     int deltaX = Math.abs(x - oponete.x);
     int deltaY = Math.abs(y - oponete.y);
@@ -26,7 +26,7 @@ public class Jogador {
     }
   }
 
-  boolean andar(Direcao d) {
+  public boolean andar(Direcao d) {
     switch (d) {
       case NORTE:
         y--;
